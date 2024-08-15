@@ -1,8 +1,19 @@
 # About
 
-This is the code repository for the paper titled "Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities" and it contains the code for our coverage-guided web application fuzzer as well as our evaluation tooling. Note that this is an academic prototype and hard to set up currently. 
+This is the code repository for the paper titled "[Atropos: Effective Fuzzing of Web Applications for Server-Side Vulnerabilities](https://www.usenix.org/system/files/usenixsecurity24-guler.pdf)" and it contains the code for our coverage-guided web application fuzzer as well as our evaluation tooling. Note that this is an academic prototype and hard to set up currently. 
 
 But: At the moment we are performing a complete rewrite of the project in Rust, with a far easier setup and straightforward usage, so stay tuned.
+
+# Cite
+
+```
+@inproceedings{atropos,
+  title={Atropos: Effective fuzzing of web applications for server-side vulnerabilities},
+  author={G{\"u}ler, Emre and Schumilo, Sergej and Schloegel, Moritz and Bars, Nils and G{\"o}rz, Philipp and Xu, Xinyi and Kaygusuz, Cemal and Holz, Thorsten},
+  booktitle={USENIX Security Symposium},
+  year={2024}
+}
+```
 
 # Install
 
