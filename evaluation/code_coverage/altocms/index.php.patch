@@ -1,0 +1,13 @@
+--- A/var/www/html/index.php	2023-07-14 16:28:27.027923494 +0200
++++ B/var/www/html/index.php	2023-07-14 16:28:30.059943016 +0200
+@@ -8,8 +8,8 @@
+  *----------------------------------------------------------------------------
+  */
+ 
+-error_reporting(E_ALL);
+-ini_set('display_errors', 1);
++error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED);
++ini_set('display_errors', 0);
+ 
+ defined('ALTO_DIR') || define('ALTO_DIR', dirname(__FILE__));
+ 

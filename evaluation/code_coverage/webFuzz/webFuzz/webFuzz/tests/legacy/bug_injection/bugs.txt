@@ -1,0 +1,150 @@
+{"s":"17045 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["27077","3"],"loggedin":false,"kind":"GET"}}
+{"page_id":"34301 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["13182","2"],"loggedin":false,"kind":"GET"}}
+{"author":"12766 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["13112","1"],"loggedin":false,"kind":"GET"}}
+{"cat":"49717 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["16317","3"],"loggedin":false,"kind":"GET"}}
+{"p":"76527 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["6097","2"],"loggedin":false,"kind":"GET"}}
+{"author":"51612 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["6099","1"],"loggedin":false,"kind":"POST"}}
+{"author":"98500","email":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["6117","2"],"loggedin":false,"kind":"POST"}}
+{"author":"85616","url":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["13196","1"],"loggedin":false,"kind":"POST"}}
+{"author":"53682","comment_post_ID":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["13854","3"],"loggedin":false,"kind":"POST"}}
+{"author":"69802","comment_parent":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["13184","1"],"loggedin":false,"kind":"POST"}}
+{"email":"34078 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["13117","1"],"loggedin":false,"kind":"POST"}}
+{"email":"66366","wp-comment-cookies-consent":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["5183","2"],"loggedin":false,"kind":"POST"}}
+{"email":"37832","comment_post_ID":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-comments-post.php","label":["6092","1"],"loggedin":false,"kind":"POST"}}
+{"log":"14029","pwd":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["14350","2"],"loggedin":false,"kind":"POST"}}
+{"log":"41359","rememberme":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["14308","2"],"loggedin":false,"kind":"POST"}}
+{"log":"65902","testcookie":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["2380","1"],"loggedin":false,"kind":"POST"}}
+{"pwd":"73008 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["13821","3"],"loggedin":false,"kind":"POST"}}
+{"pwd":"10735","redirect_to":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["6125","1"],"loggedin":false,"kind":"POST"}}
+{"rememberme":"37497 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["15325","3"],"loggedin":false,"kind":"POST"}}
+{"feed":"50144 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/","label":["6162","1"],"loggedin":false,"kind":"GET"}}
+{"action":"95346 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php","label":["13116","1"],"loggedin":false,"kind":"GET"}}
+{"user_login":"72577 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php?action=lostpassword","label":["13123","1"],"loggedin":false,"kind":"POST"}}
+{"user_login":"13433","redirect_to":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-login.php?action=lostpassword","label":["6116","1"],"loggedin":false,"kind":"POST"}}
+{"hostname":"58991","username":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["6104","1"],"loggedin":true,"kind":"POST"}}
+{"hostname":"66260","password":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["15326","2"],"loggedin":true,"kind":"POST"}}
+{"hostname":"94547","connection_type":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["14101","3"],"loggedin":true,"kind":"POST"}}
+{"hostname":"95225","_fs_nonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["18861","1"],"loggedin":true,"kind":"POST"}}
+{"username":"54815 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["4665","2"],"loggedin":true,"kind":"POST"}}
+{"username":"65661","password":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["5114","4"],"loggedin":true,"kind":"POST"}}
+{"username":"81713","connection_type":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["14808","3"],"loggedin":true,"kind":"POST"}}
+{"password":"87805 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["15482","1"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce_remove_inactive_widgets":"96478 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/widgets.php","label":["5136","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce_remove_inactive_widgets":"95430","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/widgets.php","label":["5116","3"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce_remove_inactive_widgets":"89182","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/widgets.php","label":["5117","2"],"loggedin":true,"kind":"POST"}}
+{"_ajax_linking_nonce":"55796 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/widgets.php","label":["14322","1"],"loggedin":true,"kind":"GET"}}
+{"import":"26895 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["15892","2"],"loggedin":true,"kind":"POST"}}
+{"import":"10109","action":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["14359","1"],"loggedin":true,"kind":"POST"}}
+{"import":"29130","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["26341","1"],"loggedin":true,"kind":"POST"}}
+{"action":"23411 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["40988","2"],"loggedin":true,"kind":"POST"}}
+{"action":"20586","_wpnonce-custom-background-upload":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["8521","2"],"loggedin":true,"kind":"POST"}}
+{"action":"38009","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["7304","4"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce-custom-background-upload":"42027 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["7205","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce-custom-background-upload":"68384","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["8956","1"],"loggedin":true,"kind":"POST"}}
+{"import":"46099","action":"<script>alert(913990);</script>","_wpnonce-custom-background-upload":"john@gmail.com","_wp_http_referer":"+11899001212","_Request_Details_":{"action":"http://localhost/wp-admin/themes.php?page=custom-background","label":["6157","2"],"loggedin":true,"kind":"POST"}}
+{"async-upload":"24914","_wpnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/media-new.php","label":["14812","2"],"loggedin":true,"kind":"POST"}}
+{"post_id":"35120 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/media-new.php","label":["5181","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"73434 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/media-new.php","label":["5177","5"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"81346","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/media-new.php","label":["5143","2"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"80832 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["18839","2"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"17545","response-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["7213","1"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"72409","date-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["33140","3"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"56953","mode":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["4559","3"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"13331","screenoptionnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["14825","1"],"loggedin":true,"kind":"POST"}}
+{"response-hide":"33848 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["15885","3"],"loggedin":true,"kind":"POST"}}
+{"response-hide":"64518","date-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["15889","2"],"loggedin":true,"kind":"POST"}}
+{"s":"72214 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["4566","2"],"loggedin":true,"kind":"GET"}}
+{"s":"41135","comment_status":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["6127","1"],"loggedin":true,"kind":"GET"}}
+{"s":"65636","pagegen_timestamp":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["16122","2"],"loggedin":true,"kind":"GET"}}
+{"s":"66111","_total":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["15551","2"],"loggedin":true,"kind":"GET"}}
+{"s":"24455","_per_page":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["18835","2"],"loggedin":true,"kind":"GET"}}
+{"s":"89627","_page":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["6160","2"],"loggedin":true,"kind":"GET"}}
+{"s":"22147","_ajax_fetch_list_nonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["15553","3"],"loggedin":true,"kind":"GET"}}
+{"s":"69978","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["5180","3"],"loggedin":true,"kind":"GET"}}
+{"s":"10406","_wpnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["33185","3"],"loggedin":true,"kind":"GET"}}
+{"s":"42251","paged":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["5163","4"],"loggedin":true,"kind":"GET"}}
+{"_ajax_linking_nonce":"10077 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-comments.php","label":["14311","2"],"loggedin":true,"kind":"GET"}}
+{"action":"41836 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["13087","1"],"loggedin":true,"kind":"POST"}}
+{"action":"85508","_wpnonce_create-user":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["14382","1"],"loggedin":true,"kind":"POST"}}
+{"action":"96066","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["6094","1"],"loggedin":true,"kind":"POST"}}
+{"action":"29542","user_login":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["33895","1"],"loggedin":true,"kind":"POST"}}
+{"action":"46532","last_name":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["7252","3"],"loggedin":true,"kind":"POST"}}
+{"action":"75873","url":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["7196","2"],"loggedin":true,"kind":"POST"}}
+{"action":"46799","pass1":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["6098","2"],"loggedin":true,"kind":"POST"}}
+{"action":"88087","pass2":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/user-new.php","label":["15546","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"66285 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["15542","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"72493","from":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["35247","5"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"89082","checkuser_id":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["26510","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"45713","rich_editing":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["13859","3"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"30614","color-nonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["34069","2"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"73049","admin_color":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["13849","3"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"94988","comment_shortcuts":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["15477","3"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"54101","admin_bar_front":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/profile.php","label":["14820","2"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"38241 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["19794","2"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"19554","tagsdiv-post_tag-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["24565","3"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"25427","pageparentdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["8637","3"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"89270","postimagediv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["13084","1"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"14460","postexcerpt-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["25882","2"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"85727","trackbacksdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["33181","3"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"84696","postcustom-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["24520","4"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"51254","commentstatusdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["4496","3"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"68106","slugdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["25905","4"],"loggedin":true,"kind":"POST"}}
+{"categorydiv-hide":"85446","authordiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["12703","4"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"20040 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["12754","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"61902","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["7197","1"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"29783","user_ID":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["15268","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"93595","action":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["33162","3"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"20052","originalaction":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["14419","1"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"39905","original_post_status":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["12719","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"76850","referredby":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["12718","3"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"89160","_wp_original_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["5175","5"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"75916","auto_draft":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php","label":["14691","1"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"93908 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post.php","label":["15462","1"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"99587","_wp_http_referer":"<script>alert(913990);</script>","action":"john@gmail.com","_Request_Details_":{"action":"http://localhost/wp-admin/post.php","label":["14305","3"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"58271 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["33161","3"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"32484","postimagediv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["12723","2"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"29347","postcustom-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["12726","2"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"98998","commentstatusdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["12704","3"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"17746","slugdiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["24519","5"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"91659","authordiv-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["12725","3"],"loggedin":true,"kind":"POST"}}
+{"pageparentdiv-hide":"14278","screenoptionnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["25814","2"],"loggedin":true,"kind":"POST"}}
+{"postimagediv-hide":"10448 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["34086","2"],"loggedin":true,"kind":"POST"}}
+{"postimagediv-hide":"27819","postcustom-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["26336","3"],"loggedin":true,"kind":"POST"}}
+{"_wpnonce":"34169 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["14576","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"30642","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["30904","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"60257","user_ID":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["19796","1"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"56172","action":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post-new.php?post_type=page","label":["14480","2"],"loggedin":true,"kind":"GET"}}
+{"description-hide":"97984 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=category","label":["6099","1"],"loggedin":true,"kind":"POST"}}
+{"description-hide":"86630","slug-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=category","label":["6158","2"],"loggedin":true,"kind":"POST"}}
+{"taxonomy":"45997 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=category","label":["27077","3"],"loggedin":true,"kind":"GET"}}
+{"taxonomy":"45759","post_type":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=category","label":["6097","2"],"loggedin":true,"kind":"GET"}}
+{"taxonomy":"98394","s":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=category","label":["6162","1"],"loggedin":true,"kind":"GET"}}
+{"author-hide":"50101","tags-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["15326","2"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"57728","comments-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["13182","2"],"loggedin":true,"kind":"POST"}}
+{"author-hide":"11129","date-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["13112","1"],"loggedin":true,"kind":"POST"}}
+{"s":"19890","post_status":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["5165","2"],"loggedin":true,"kind":"GET"}}
+{"s":"66653","post_type":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["18837","1"],"loggedin":true,"kind":"GET"}}
+{"post_status":"78285","_wpnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit.php","label":["14686","3"],"loggedin":true,"kind":"GET"}}
+{"slug-hide":"70864 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/edit-tags.php?taxonomy=post_tag","label":["30960","2"],"loggedin":true,"kind":"POST"}}
+{"dashboard_site_health-hide":"12719","screenoptionnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/index.php","label":["14284","1"],"loggedin":true,"kind":"POST"}}
+{"dashboard_right_now-hide":"64331 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/index.php","label":["34068","2"],"loggedin":true,"kind":"POST"}}
+{"newcomment_author":"72427","newcomment_author_url":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/index.php","label":["4432","2"],"loggedin":true,"kind":"GET"}}
+{"newcomment_author":"54939","action":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/index.php","label":["4307","2"],"loggedin":true,"kind":"GET"}}
+{"newcomment_author":"39891","mode":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/index.php","label":["12726","2"],"loggedin":true,"kind":"GET"}}
+{"post_title":"68813","post_type":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post.php","label":["13184","1"],"loggedin":true,"kind":"POST"}}
+{"action":"75860","post_ID":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/post.php","label":["8521","2"],"loggedin":true,"kind":"POST"}}
+{"hostname":"43715","_fs_nonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["4140","2"],"loggedin":true,"kind":"POST"}}
+{"username":"95026 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["34037","4"],"loggedin":true,"kind":"POST"}}
+{"username":"96272","password":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost","label":["34030","5"],"loggedin":true,"kind":"POST"}}
+{"email-hide":"84534","posts-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/users.php","label":["14339","1"],"loggedin":true,"kind":"POST"}}
+{"s":"10888","_wpnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/users.php","label":["14350","2"],"loggedin":true,"kind":"GET"}}
+{"_wpnonce":"56529","paged":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/users.php","label":["15524","1"],"loggedin":true,"kind":"GET"}}
+{"tab":"16346 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/plugin-install.php","label":["14305","3"],"loggedin":true,"kind":"GET"}}
+{"download":"19890 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/export.php","label":["13196","1"],"loggedin":true,"kind":"GET"}}
+{"username_or_email_for_privacy_request":"85018","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/export-personal-data.php","label":["34088","1"],"loggedin":true,"kind":"POST"}}
+{"filter-status":"57426 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/export-personal-data.php","label":["2380","1"],"loggedin":true,"kind":"GET"}}
+{"email-hide":"12210","created_timestamp-hide":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/erase-personal-data.php","label":["5140","2"],"loggedin":true,"kind":"POST"}}
+{"username_or_email_for_privacy_request":"32942 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/erase-personal-data.php","label":["15892","2"],"loggedin":true,"kind":"POST"}}
+{"username_or_email_for_privacy_request":"52336","_wpnonce":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/erase-personal-data.php","label":["15466","2"],"loggedin":true,"kind":"POST"}}
+{"username_or_email_for_privacy_request":"60247","_wp_http_referer":"<script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/erase-personal-data.php","label":["13123","1"],"loggedin":true,"kind":"POST"}}
+{"action":"73907 <script>alert(913990);</script>","_Request_Details_":{"action":"http://localhost/wp-admin/options-privacy.php","label":["5116","3"],"loggedin":true,"kind":"POST"}}

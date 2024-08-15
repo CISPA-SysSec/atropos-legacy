@@ -1,0 +1,1 @@
+--form-user user1 --form-password securecloud --form-url http://localhost/index.php/login --url http://localhost/ -s http://localhost/list_php_files.php -x http://localhost/index.php/logout --headless hidden

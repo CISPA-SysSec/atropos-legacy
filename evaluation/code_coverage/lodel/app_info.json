@@ -1,0 +1,14 @@
+[
+    {
+        "hostname": "localhost",
+        "url": "http://localhost",
+        "port": 80,
+        "csrf_field": "user_token",
+        "authentication_method": "form",
+        "verification_method": "form",
+        "login_page_url": "/lodeladmin/login.php",
+        "login_request_url": "/lodeladmin/login.php",
+        "username": "lodeladmin",
+        "password": "p@ssw0rd"
+    }
+]

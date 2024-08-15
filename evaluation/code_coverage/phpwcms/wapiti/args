@@ -1,0 +1,1 @@
+--form-user user1 --form-password secure --form-url http://localhost/phpwcms/login.php --url http://localhost/phpwcms/ -s http://localhost/list_php_files.php

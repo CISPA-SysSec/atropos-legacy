@@ -1,0 +1,10 @@
+{
+    "require": {
+        "facebook/xhp-lib": "^3.1.1",
+        "hhvm": "4.48.*",
+        "facebook/fbexpect": "^2.6.1",
+        "hhvm/hhvm-autoload": "^2.0|^3.0",
+        "hhvm/hhast": "^4.0"
+    },
+    "require-dev": {}
+}

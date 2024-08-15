@@ -1,0 +1,1 @@
+--form-user admin --form-password p@ssw0rd --form-url http://localhost/public/login -x http://localhost/public/logout --url http://localhost/ -s http://localhost/list_php_files.php

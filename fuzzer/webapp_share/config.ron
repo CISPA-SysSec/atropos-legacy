@@ -1,0 +1,34 @@
+
+#![enable(implicit_some)]
+(
+    include_default_config_path: "/home/user/atropos/webapp_share/default_config_kernel.ron",
+      runner: QemuSnapshot((
+         //debug: true,
+	    //snapshot_path: Reuse("/tmp/snapshot/"),
+      )),
+  fuzz: (
+    workdir_path: "/tmp/workdir",
+      mem_limit: 12288,
+      cow_primary_size: 19327352832,
+      seed_path: "",
+      dict: [
+      ],
+      ip0: (
+        a: 0,
+        b: 0,
+      ),
+      ip1: (
+        a: 0,
+        b: 0,
+      ),
+      ip2: (
+        a: 0,
+        b: 0,
+      ),
+      ip3: (
+        a: 0,
+        b: 0,
+      ),
+  ),
+)
+  

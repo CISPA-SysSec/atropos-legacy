@@ -1,0 +1,1 @@
+--auth-user admin --auth-password p@ssw0rd --auth-method basic --url http://localhost/ -s http://localhost/list_php_files.php -s http://localhost/api/v1/App/user -x http://localhost/api/v1/App/action/destroyAuthToken --headless hidden

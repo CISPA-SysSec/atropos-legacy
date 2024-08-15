@@ -1,0 +1,49 @@
+<!-- Website vulnerable to xss attacks.
+	 Author: Marcos Antonios Charalambous
+-->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Vulnerable Website</title>
+
+		<style>
+			body {background-color: powderblue;}
+			.formStyle {
+						  margin: auto;
+						  width: 30%;
+						  border: 1px solid red;
+						  padding: 1px;
+						}	
+			form {
+					margin: 0 auto; 
+					text-align: center;
+				 }
+		</style>
+
+	</head>
+
+	<body>
+
+		<h2 align="center">Login</h2>
+		<div class="formStyle">
+			<form action="/Vulnerable_websites/xss.hack" method="POST" enctype="multipart/form-data">
+			  <label for="name">Name:</label><br>
+			  <input type="text" id="name" name="name" value="">
+			  <br>
+			  <label for="pass">Magic password:</label><br>
+			  <input type="text" id="pass" name="pass" value="">
+			  <br>
+			  <br>
+			  <input type="submit" id="submit_btn" value="Submit">
+			</form> 
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,6 @@
+https://github.com/digininja/DVWA
+
+reCAPTCHA lab is not enabled
+https://github.com/digininja/DVWA/#recaptcha
+
+url: http://localhost/

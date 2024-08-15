@@ -1,0 +1,26 @@
+diff --git a/js/scripts/prepare-lib-original.js b/js/scripts/prepare-lib-original.js
+index b60c4c5d5..7f99ef90c 100644
+--- a/js/scripts/prepare-lib-original.js
++++ b/js/scripts/prepare-lib-original.js
+@@ -60,7 +60,7 @@ let stripSourceMappingUrl = path => {
+         return;
+     }
+ 
+-    let contents = originalContents.replaceAll(re, '');
++    let contents = originalContents.replace(re, '');
+ 
+     fs.writeFileSync(path, contents, {encoding: 'utf-8'});
+ }
+diff --git a/js/scripts/prepare-lib.js b/js/scripts/prepare-lib.js
+index a6ec15b95..2ca3846db 100644
+--- a/js/scripts/prepare-lib.js
++++ b/js/scripts/prepare-lib.js
+@@ -41,7 +41,7 @@ let stripSourceMappingUrl = path => {
+         return;
+     }
+ 
+-    let contents = originalContents.replaceAll(re, '');
++    let contents = originalContents.replace(re, '');
+ 
+     fs.writeFileSync(path, contents, {encoding: 'utf-8'});
+ }

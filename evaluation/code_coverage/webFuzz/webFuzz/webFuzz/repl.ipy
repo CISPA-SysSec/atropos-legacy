@@ -1,0 +1,44 @@
+#!/usr/bin/ipython -i
+
+# Handly tool for debugging purposes
+# Launch an interactive session with all modules pre-loaded
+
+from bs4            import BeautifulSoup
+
+from webFuzz.fuzzer        import *
+from webFuzz.worker        import *
+#from webFuzz.curses_menu   import *
+from webFuzz.node          import *
+from webFuzz.types         import *
+from webFuzz.misc          import *
+from webFuzz.mutator       import *
+from webFuzz.node_iterator import *
+from webFuzz.crawler       import *
+from webFuzz.parser        import *
+from webFuzz.detector      import *
+from webFuzz.simple_menu   import *
+from webFuzz.browser        import *
+
+from os import system
+
+# !bash -c "cowsay -d <<< 'webFuzz Repl'" 
+system(f"/bin/bash -c \"cowsay -d <<< 'webFuzz v{VERSION} Repl'\"")
+
+
+instr_args = {
+   'basic-block-count': 1000,
+   'instrument-policy': 'edge',
+   'output-method': 'file',
+   'edge-count': 2000
+}
+
+env.instrument_args = InstrumentArgs(instr_args)
+env.args = Arguments()
+
+env.args.URL = 'http://localhost/index.php?s=web'
+index = Node('http://localhost/index.php?s=web', HTTPMethod.GET)
+
+
+# a test html file is parsed and loaded for you
+with open("tests/test_html.html", "r") as f:
+   html_soup = BeautifulSoup(f.read(), "html5lib")

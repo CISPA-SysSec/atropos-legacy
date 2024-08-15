@@ -1,0 +1,1 @@
+--form-user admin --form-password admin --form-url http://localhost/xvwa/header.php --url http://localhost/xvwa/ -s http://localhost/list_php_files.php -x http://localhost/xvwa/logout.php

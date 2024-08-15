@@ -1,0 +1,12 @@
+*.scannerwork
+image_exakat/code/*
+image_exakat/scan_result*
+image_phpcs/code/*
+image_phpcs/scan_result*
+image_progpilot/code/*
+image_progpilot/scan_result*
+image_rips/code/*
+image_rips/scan_result*
+image_sonarsource/code/*
+image_sonarsource/scan_result*
+__pycache__/*

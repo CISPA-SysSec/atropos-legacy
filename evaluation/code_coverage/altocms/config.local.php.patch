@@ -1,0 +1,10 @@
+--- A/var/www/html/app/config/config.local.php	2023-07-14 15:48:50.463775779 +0200
++++ B/var/www/html/app/config/config.local.php	2023-07-14 15:47:20.903242874 +0200
+@@ -33,6 +33,7 @@
+  *
+  * $config['path']['offset_request_url']   = 1;
+  */
++$config['module']['user']["captcha_use_registration"] = false;
+ $config['path']['root']['url'] = 'http://localhost/';
+ $config['path']['root']['dir'] = ALTO_DIR . '/';
+ 

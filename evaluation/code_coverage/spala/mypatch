@@ -1,0 +1,26 @@
+diff --git a/app/Repositories/CategoryRepository.php b/app/Repositories/CategoryRepository.php
+index 36ae612..e7f8cb4 100755
+--- a/app/Repositories/CategoryRepository.php
++++ b/app/Repositories/CategoryRepository.php
+@@ -77,7 +77,7 @@ class CategoryRepository
+      */
+     public function listNameById($ids = [])
+     {
+-        $ids = is_array($ids) ? $ids : ($ids) ? [$ids] : [];
++        $ids = is_array($ids) ? $ids : (($ids) ? [$ids] : []);
+ 
+         return $this->category->whereIn('id', $ids)->get()->pluck('name')->all();
+     }
+diff --git a/app/Repositories/RoleRepository.php b/app/Repositories/RoleRepository.php
+index 7eb6754..93c0a43 100755
+--- a/app/Repositories/RoleRepository.php
++++ b/app/Repositories/RoleRepository.php
+@@ -76,7 +76,7 @@ class RoleRepository
+      */
+     public function listNameById($ids = [])
+     {
+-        $ids = is_array($ids) ? $ids : ($ids) ? [$ids] : [];
++        $ids = is_array($ids) ? $ids : (($ids) ? [$ids] : []);
+ 
+         return $this->role->whereIn('id', $ids)->get()->pluck('name')->all();
+     }

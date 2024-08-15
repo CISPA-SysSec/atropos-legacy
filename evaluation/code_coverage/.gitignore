@@ -1,0 +1,8 @@
+#tmp/*
+!tmp/zap/
+tmp/zap/*
+!tmp/zap/*.context
+!tmp/zap/zap_root_ca.cer
+!tmp/zap/zap_root_ca.key
+
+#reports/

@@ -1,0 +1,14 @@
+[
+    {
+        "hostname": "localhost",
+        "url": "http://localhost/",
+        "port": 80,
+        "csrf_field": "user_token",
+        "authentication_method": "json",
+        "verification_method": "json",
+        "login_page_url": "/",
+        "login_request_url": "/api/auth/register",
+        "username": "admin", 
+        "password": "p@ssw0rd"
+    }
+]
